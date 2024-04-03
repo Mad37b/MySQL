@@ -1,0 +1,21 @@
+
+
+
+
+
+
+// si el campo de texto no esta en blanco , actualizaras el campo de texto correspondiente 
+
+if ( !Nombre.isEmpty ){
+
+	query solo nombre
+}if (! Nif.isEmpty){
+
+	query solo nif 
+}if(correo ) {
+	query solo correo 
+}if ( telefono ){
+	query solo telefono 
+}if ( todo los campos ){
+	query todos los datos 
+}
