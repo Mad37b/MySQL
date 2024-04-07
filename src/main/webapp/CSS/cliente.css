@@ -1,0 +1,48 @@
+body{background-color: grey;}
+
+/** Selectores por ID para la tabla **/
+
+#contador{width:100px; 
+text-align:center;}
+#nombre { width:100px; 
+text-align:center}
+
+#editar { width:100px; 
+text-align:center}
+
+#borrar{ width:100px; 
+text-align:center}
+
+.table{ margin-left:auto; border : 2 px solid black
+display:flex;}
+
+/** formulario **/
+
+.contenedor{display: flex;
+justify-content: center;
+align-items: center;}
+
+
+
+#modificar{ border: 4px solid black;
+border-radius:2px;
+width:500px;
+height: 400px;
+display: flex;
+justify-content: center;}
+
+
+
+ul{margin:10px;
+list-style: none;}
+
+li{display: flex;
+align-items: center;
+margin-bottom:20px;}
+
+label{margin-bottom: 20px;}
+input{margin-bottom: 20px;}
+
+
+
+
