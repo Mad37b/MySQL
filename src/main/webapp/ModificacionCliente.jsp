@@ -27,7 +27,7 @@
 
 
 	<!--Conexion-->
-	<h3>Modificar Cliente</h3>
+	<h1>Modificar Cliente</h1>
 	<br>
 	<%
 	String actualizar = request.getParameter("actualizar");
@@ -47,10 +47,9 @@
 	<!--  Formulario de Modificar -->
 
 	<div class="contenedor">
-		");
-
+		
 		<form action="ModificacionCliente.jsp" id="modificar" method="post">
-			"
+			
 			<ul>
 
 				<li><label>Nombre: </label> <input type="text" name="Nombre"

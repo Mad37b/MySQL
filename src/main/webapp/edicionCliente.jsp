@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Editar Cliente</title>
-<link rel="stylesheet" href="cliente.css">
+<link rel="stylesheet" href="CSS/editarCliente.css">
 </head>
 <body>
 
@@ -15,8 +15,10 @@
 	<%@ page import="java.sql.DriverManager"%>
 	<%@ page import="java.sql.SQLException"%>
 	<%@ page import="java.util.Date"%>
+	
+	<h1>Editar Cliente</h1>
 
-<table border="1">
+<table class="tabla" >
 
 		<tr>
 			<th>   #  </th>
@@ -64,16 +66,16 @@
 
 			while (resultado.next()) {
 				out.print("<tr>");
-				out.println("<td id=\"contador\">"+contador);
+				out.println("<td class=\"contador\" id=\"contador\">"+contador);
 				out.println("<td id=\"nombre\">"  + resultado.getString("nombre") + "</td>");
 				out.println("<td id=\"Nif\">"  + resultado.getString("Nif") + "</td>");
 				out.println("<td id=\"email\">"  + resultado.getString("email") + "</td>");
 				out.println("<td id=\"telefono\">"  + resultado.getString("telefono") + "</td>");
-				out.println("<td id=\"editar\">"+"<form action=\"ModificacionCliente.jsp\" method=\"post\">" +"<input type=\"image\" src=\"editar.png\" value=\"resultado.getString\"(\"Nif\")>"+
+				out.println("<td id=\"editar\">"+"<form action=\"ModificacionCliente.jsp\" method=\"post\">" +"<input class=\"editar\" type=\"image\" src=\"Imagenes/editar.png\" value=\"resultado.getString\"(\"Nif\")>"+
 							"<input type=\"hidden\" name=\"Nif\" value=\""+resultado.getString("Nif")+"\">"+"<input type=\"hidden\" name=\"Nombre\" value=\""+resultado.getString("Nombre")+"\">"+
 									"<input type=\"hidden\" name=\"correo\" value=\""+resultado.getString("email")+"\">"+
 											"<input type=\"hidden\" name=\"Telefono\" value=\""+resultado.getString("telefono")+"\">"+"</form>"+"</td>");
-				out.println("<td id=\"borrar\">"+"<form action=\"eliminarCliente.jsp\" method=\"post\">" +"<input type=\"image\" value=\"Borrar\" src=\"Equis.webp\">"+"</input>"+"</form>"+"</td>");
+				out.println("<td id=\"borrar\">"+"<form action=\"eliminarCliente.jsp\" method=\"post\">" +"<input class=\"borrar\" type=\"image\" value=\"Borrar\" src=\"Imagenes/Equis.webp\">"+"</input>"+"</form>"+"</td>");
 				out.println("</tr>");
 				contador ++;
 			}
